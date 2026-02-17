@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Aura Glow | Premium Handcrafted Candles</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animations.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="nav-left">
+        <i class="fas fa-bars menu-icon"></i>
+        <span class="nav-text">Aura Glow</span>
+    </div>
+
+    <div class="logo-container">
+        <img src="./AURA GLOW LOGO .jpg" class="main-logo">
+    </div>
+
+    <div class="nav-right">
+        <div class="cart-trigger" onclick="toggleCart()">
+            <i class="fas fa-shopping-bag"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </div>
+</header>
+
+
+<section class="hero slide-up">
+    <h1>Aura Glow</h1>
+    <p class="slogan-text">Light. Scent. Serenity.</p>
+    <img src="./Animation Image .jpg" class="floating-img">
+</section>
+
+
+<section class="products">
+<h2 class="section-title">Our Collection</h2>
+
+<div class="grid-container">
+
+<div class="product-card fade-in">
+<span class="badge">Best Seller</span>
+<div class="img-box"><img src="./IMG-1.jpg"></div>
+<h3>Small Peony Candle</h3>
+<p class="price">Rs. 300</p>
+
+<button class="add-to-cart-btn" onclick="addToCart('Small Peony Candle',300)">Add to Cart</button>
+</div>
+
+
+<div class="product-card fade-in">
+<div class="img-box"><img src="./IMG-2.jpg"></div>
+<h3>Small Bubble Candle</h3>
+<p class="price">Rs. 250</p>
+
+<button class="add-to-cart-btn" onclick="addToCart('Small Bubble Candle',250)">Add to Cart</button>
+</div>
+
+
+<div class="product-card fade-in">
+<span class="badge">Premium</span>
+<div class="img-box"><img src="./IMG-4.jpg"></div>
+<h3>Big Bubble Candle</h3>
+<p class="price">Rs. 450</p>
+
+<button class="add-to-cart-btn" onclick="addToCart('Big Bubble Candle',450)">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+
+
+<div id="cart-sidebar" class="cart-sidebar">
+<div class="cart-header">
+<h3>Shopping Bag</h3>
+<i class="fas fa-times close-cart" onclick="toggleCart()"></i>
+</div>
+
+<div id="cart-items-list" class="cart-body"></div>
+
+<div class="cart-footer">
+<div class="total-row">
+<span>Total:</span>
+<span>Rs. <span id="cart-total-price">0</span></span>
+</div>
+<button class="checkout-btn" onclick="checkout()">Checkout via Instagram</button>
+</div>
+</div>
+
+
+
+<div class="insta-btn-float" onclick="openInstagramWeb()">
+<i class="fab fa-instagram"></i>
+<span class="float-text">Message Us</span>
+</div>
+
+<footer>
+<p>© 2026 Aura Glow - Light. Scent. Serenity.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
